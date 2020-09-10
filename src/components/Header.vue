@@ -81,7 +81,7 @@ export default {
 
 .headerGroup{
     display: flex;
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
     padding-top: 20px;
     width: 100%;
     padding-bottom: -10px;

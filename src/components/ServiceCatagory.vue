@@ -54,7 +54,7 @@ export default {
 }
 
 .serviceType1:hover {
- background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+ background-image: url("../assets/abstract-antique-backdrop-background.jpg");
  background-size: auto;
  background-position: top;
       -webkit-transition: all 0s ease-in-out;
@@ -82,7 +82,7 @@ export default {
 }
 
 .serviceType2:hover {
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
     background-size: auto;
     background-position: top;
       -webkit-transition: all 0s ease-in-out;
@@ -111,7 +111,7 @@ export default {
 }
 
 .serviceType3:hover {
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
  /* background-image: url(); */
  background-size: auto;
  background-position: top;
@@ -140,7 +140,7 @@ export default {
 }
 
 .serviceType4:hover {
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
  /* background-image: url(); */
  background-position: top;
  background-size: auto;
@@ -168,7 +168,7 @@ export default {
 }
 
 .serviceType5:hover {
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
  /* background-image: url(); */
  background-size: auto;
  background-position: top;
@@ -197,7 +197,7 @@ export default {
 }
 
 .serviceType6:hover {
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
  /* background-image: url(); */
  background-size: auto;
  background-position: top;

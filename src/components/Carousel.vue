@@ -32,7 +32,7 @@
       <!-- Slides with image only -->
       <b-carousel-slide
         style="height: 500px; "
-       img-src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg"></b-carousel-slide>
+       :img-src="doorknob"></b-carousel-slide>
 
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
@@ -66,6 +66,7 @@
 
   import toolsImage1 from "../assets/neonbrand-SiYxQRATT2M-unsplash.jpg"
   import toolsImage2 from "../assets/person-holding-pencil-1388944.jpg"
+import doorknob from "../assets/HM towel rack.jpg"
 
   export default {
     data() {
@@ -74,7 +75,8 @@
         slide: 0,
         sliding: null,
         image1: toolsImage1,
-        image2: toolsImage2
+        image2: toolsImage2,
+        doorknob: doorknob
       }
     },
     // methods: {

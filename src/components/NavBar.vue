@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 .navBar{
-    background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
     z-index: 2;
 }
 

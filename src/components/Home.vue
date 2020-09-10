@@ -96,7 +96,7 @@ export default {
 }
 
 .footer{
-     background-image: url("../assets/abstract-antique-backdrop-background-129731.jpg");
+     background-image: url("../assets/abstract-antique-backdrop-background.jpg");
      height: 100px;
 }
 
