@@ -37,7 +37,7 @@
 
 <script>
 
-import {uriBase} from '../../const';
+import {serverUri} from '../../const';
 
 export default {
     
@@ -64,7 +64,7 @@ export default {
      mounted:
     
     function getServices (){
-        fetch(`${uriBase}/api/Servicelist`, {
+        fetch(`${serverUri}/api/Servicelist`, {
             method: "GET",
                  }
         ).then(res=> res.json()).then(res => this.services= res)
