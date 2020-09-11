@@ -1,6 +1,6 @@
 // set up as a ternary so optimizer will optimize out the code that is never run
 const uriBase = process.env.NODE_ENV !== 'production'?(
-    "https://handymanslc.herokuapp.com/"
+    "https://handymanslcvue.herokuapp.com/"
 ) : (
     "http://localhost:5000"
 )
@@ -8,6 +8,6 @@ const uriBase = process.env.NODE_ENV !== 'production'?(
 module.exports.uriBase = uriBase
 
 
-const serverUri = "https://brettserver.herokuapp.com/"
+const serverUri = "https://brettserver.herokuapp.com"
 
 module.exports.serverUri = serverUri
