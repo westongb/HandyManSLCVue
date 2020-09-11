@@ -9,9 +9,9 @@ module.exports.uriBase = uriBase
 
 
 const serverUri = process.env.NODE_ENV !== 'production'?(
-    "http://localhost:5000"
-) : (
     "https://brettserver.herokuapp.com"
+) : (
+    "http://localhost:5000"
 )
 
 module.exports.serverUri = serverUri
