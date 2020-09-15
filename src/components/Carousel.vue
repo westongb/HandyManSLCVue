@@ -36,22 +36,19 @@
 
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
-        <template v-slot:img>
-          <img
-            class="d-block img-fluid w-100"
-            width="1024"
-            style="height: 500px; object-fit: cover;"
-            src="https://images.pexels.com/photos/589/garden-grass-meadow-green.jpg"
-            alt="image slot"
-          >
-        </template>
+      <b-carousel-slide
+       style="height: 500px"
+       caption="Blank Image" 
+       :img-src="image3" img-alt="Blank image">
+          
+       
       </b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
       <b-carousel-slide
         style="height: 500px"
-       caption="Blank Image" img-src="https://images.pexels.com/photos/1571736/pexels-photo-1571736.jpeg" img-alt="Blank image">
+       caption="Blank Image" 
+       :img-src="image4" img-alt="Blank image">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
           a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
@@ -66,7 +63,10 @@
 
   import toolsImage1 from "../assets/neonbrand-SiYxQRATT2M-unsplash.jpg"
   import toolsImage2 from "../assets/person-holding-pencil-1388944.jpg"
-import doorknob from "../assets/HM towel rack.jpg"
+  import toolsImage3 from "../assets/grinderCompressed.jpg"
+  import toolsImage4 from "../assets/Webp.net-compress-image (2) (1).jpg"
+
+import toolsImage5 from "../assets/annie-gray-WEWTGkPUVT0-unsplash.jpg"
 
   export default {
     data() {
@@ -76,7 +76,9 @@ import doorknob from "../assets/HM towel rack.jpg"
         sliding: null,
         image1: toolsImage1,
         image2: toolsImage2,
-        doorknob: doorknob
+        doorknob: toolsImage5,
+        image3: toolsImage3,
+        image4: toolsImage4
       }
     },
     // methods: {
