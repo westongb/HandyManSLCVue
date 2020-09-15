@@ -39,7 +39,7 @@
 <script>
 
 import person1 from "../assets/robert-godwin-cdksyTqEXzo-unsplash.jpg";
-import person2 from "../assets/nickolas-nikolic-iwV1-SWB4n8-unsplash.jpg";
+import person2 from "../assets/Webp.net-resizeimage.jpg";
 import person3 from "../assets/fred-kearney-o-ioeoATbIM-unsplash.jpg";
 
 
