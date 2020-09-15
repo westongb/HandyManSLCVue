@@ -61,7 +61,7 @@
 
 <script>
 
-  import toolsImage1 from "../assets/neonbrand-SiYxQRATT2M-unsplash.jpg"
+  import toolsImage1 from "../assets/neonbrand-SiYxQRATT2M-unsplash2.jpg"
   import toolsImage2 from "../assets/person-holding-pencil-1388944.jpg"
   import toolsImage3 from "../assets/grinderCompressed.jpg"
   import toolsImage4 from "../assets/Webp.net-compress-image (2) (1).jpg"
