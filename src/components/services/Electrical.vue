@@ -92,6 +92,8 @@ export default {
     border-color: black;
     margin-bottom: 20px;
     border-radius: 15px;
+    background-color: #C3AD98 ;
+    color: #1f524d;
 }
 
 .catagoryButtons{
@@ -105,8 +107,8 @@ export default {
     width: 18%;
     height: 60px;
     margin-bottom: 20px;
-    background-color: brown;
-    color: wheat;
+    background-color: #377771;
+    color: white;
     font-size: 20px;
     
 }
