@@ -163,7 +163,7 @@ export default {
     width: 90%;
     height: 600px;
     margin: auto;
-    background-color: wheat;
+    background-color: #C3AD98;
 }
 
 .messageLabel{

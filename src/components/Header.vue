@@ -23,9 +23,9 @@
                         
                         <a  href="\quote">
                         <!-- <img class="iconImage" src="https://cdn0.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-3/24/5046-512.png"/> -->
-                        <b-icon icon="calendar" class="h1 mb-2"></b-icon>
+                        <b-icon icon="calendar" class="h1 mb-1"></b-icon>
                         <div>
-                        <h4 class="headerText">Get A Quote</h4>
+                        <h4 class="headerText detail" >Get A Quote</h4>
                         <h4 class="headerText detail">Let me know what you need!</h4>
                        
                     </div>
@@ -102,25 +102,26 @@ export default {
     border: solid  darkslategray;
     padding: 2px;
     padding-right: 6px;
-    background-color: wheat;
+    background-color: #C3AD98;
     align-items: center;
     justify-self: center;
     border-radius: 10px;
     }
 
 .headerList:hover{
-    background-color: brown;
+    background-color: #62443A;
      background-image: url();
 }
 
 .headerList:hover .headerText{
-    color: wheat;
+    color: #C3AD98;
 }
 
 .headerText{
     color: darkslategray;
     font-size: .8em;
-    margin-left: 5px;
+    margin: auto;
+    
 }
 
 .logo{
@@ -130,6 +131,10 @@ export default {
 .calenderIcon{
     height: 30px;
 
+}
+
+.detail{
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 800px) {

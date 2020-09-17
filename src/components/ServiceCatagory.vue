@@ -45,10 +45,10 @@ export default {
   background-repeat: no-repeat;
    background-size: 200%;
    background-position: center;
-    height: 200px;
-    border-radius: 100px;
+    height: 230px;
+    border-radius: 205px;
     margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
     
 }
@@ -73,10 +73,10 @@ export default {
     background-size: cover;
   background-repeat: no-repeat;
      background-size: 200%;
-    height: 200px;
+    height: 230px;
     border-radius: 205px;
       margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
     
 }
@@ -101,10 +101,10 @@ export default {
  
   background-repeat: no-repeat;
     background-size: 200%;
-    height: 200px;
+    height: 230px;
     border-radius: 205px;
       margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
 
     
@@ -130,10 +130,10 @@ export default {
     background-size: cover;
   background-repeat: no-repeat;
       background-size: 200%;
-    height: 200px;
+    height: 230px;
     border-radius: 205px;
        margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
 
     
@@ -158,10 +158,10 @@ export default {
     
   background-repeat: no-repeat;
     background-size: 150%;
-    height: 200px;
+    height: 230px;
     border-radius: 205px;
      margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
 
     
@@ -187,10 +187,10 @@ export default {
       background-size: 150%;
   background-repeat: no-repeat;
   
-    height: 200px;
+    height: 230px;
     border-radius: 205px;
      margin: 1%;
-    width: 200px;
+    width: 230px;
     align-items: center;
 
     
@@ -215,6 +215,11 @@ export default {
     margin: 0% 5% 0% 5%;
 }
 
+.service h1{
+    margin-bottom: 3%;
+    margin-left: -10%;
+}
+
 .serviceText{
     display: flex;
     flex-direction: column;
@@ -229,6 +234,7 @@ export default {
    
       text-shadow:2px 2px 10px white;
       font-weight: 900;
+      
 }
 
 h4{

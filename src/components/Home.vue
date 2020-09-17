@@ -1,15 +1,12 @@
 <template>
 
     <div class="site">
-          <div class="sitebackground"></div>  
+          <!-- <div class="sitebackground"></div>   -->
         <Carousel/>
-    <div class="description">
-        <h1>Hello World</h1>
-        <h4>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-             not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h4>
+         
+    <div class="offer">
+        <Offer/>
     </div> 
-  
     <div class="sectionSpace"></div>
     <div class="services">
         <ServiceCatagory/>
@@ -17,8 +14,10 @@
     <div id="trial">
         <h1>{{product}}</h1>
     </div>
-    <div>
-        <HandyMan class="HandyMan"/>
+    <div class="handyman">
+        <p class="handymanText">My motto is “DON’T LIVE WITH IT, FIX IT!” It is silly that we all tend to let things go in our homes until we have family coming over, the big party, the leak becomes a flood, the grass is 
+            now dead or we decide to sell the house. You should enjoy your home at its best all the time you live there. I think that is something we all deserve. <a href="./meetBrett">...more</a></p>
+        <img class="brettImage" :src="brettImage"/>
     </div>
     <div>
         <Reviews/>
@@ -39,20 +38,28 @@
 </template>
 
 <script>
-import HandyMan from "./Brett"
+// import HandyMan from "./Brett"
 import Carousel from "./Carousel";
 import ServiceCatagory from "./ServiceCatagory";
 import Reviews from "./Reviews";
 import GetQuote from "./Getquote";
+import brettImage from "../assets/rsz_handyman_brett.jpg"
+import Offer from "./offer";
 
 export default {
     name: "Home",
     components: {
         Carousel,
         ServiceCatagory,
-        HandyMan,
+        // HandyMan,
         Reviews,
-        GetQuote
+        GetQuote,
+        Offer
+    },
+    data(){
+        return{
+            brettImage: brettImage
+        }
     }
 }
 
@@ -61,20 +68,15 @@ export default {
 </script>
 
 <style scoped>
-.description{
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    padding-top: 50px;
-    margin-left: 10%;
-    width: 80%;
-    justify-content: center;
-    color: black;
-    z-index: 3;
-}
+
 
 .sectionSpace{
     height: 20px;
+}
+
+.brettImage{
+    height: 55vh;
+
 }
 
 .services{
@@ -85,15 +87,15 @@ export default {
     
 }
 
-.sitebackground{
+/* .sitebackground{
     top: 0;
     left: 0;
     width: 100%;
     height: 1200px;
     position: absolute;
     background-color: rgba(245, 244, 244, 0.5);
-    z-index: 0;
-}
+  
+} */
 
 .footer{
      background-image: url("../assets/abstract-antique-backdrop-background.jpg");
@@ -107,7 +109,61 @@ export default {
     display: flex;
     justify-content: center;
     margin: auto;
-    background-color: wheat;
+    background-color: #C3AD98;
+}
+
+.handyman{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+   background-color: #62443A;
+}
+.brettImage{
+    margin-top: 2%;
+}
+
+.handymanText{
+    width: 40%;
+    font-size: 200%;
+    margin-top: 5%;
+    color: #C3AD98;
+}
+
+@media screen and (max-width: 850px) {
+
+.handymanText{
+    font-size: 170%;
+}
+
+.brettImage{
+    margin-top: 5%;
+}
+
+.services{
+    margin-left: 20%;
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+
+.handymanText{
+    font-size: 150%;
+}
+
+.brettImage{
+    margin-top: 8%;
+}
+
+}
+
+@media (max-width: 650px) {
+.services{
+    margin-left: 10%;
+}
 }
 
 </style>

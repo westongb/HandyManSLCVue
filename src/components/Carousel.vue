@@ -96,4 +96,7 @@ import toolsImage5 from "../assets/annie-gray-WEWTGkPUVT0-unsplash.jpg"
 #firstSlide{
     height: 400px;
 }
+
+
+
 </style>

@@ -6,22 +6,35 @@
     <div class="brettSection">
         <div class="brettDescription">
             <div class="brettText">
-        <h2>Brett White</h2>
+        <h2>Meet Brett White</h2>
         <div class="underline"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-             est laborum.
-             <br/>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-             est laborum.
-             </p>
+        <div class="textSection one">
+        <img class="brettImage" :src="waterTower"/>
+        <p>Many years ago I was driving by a golf course and my family noticed that their small water tower had fallen to the ground. It had been painted like a massive golf ball on a tee, 
+            and it looked quite forlorn as it lay there. My 5-year old daughter was sad, but then she quickly smiled as she knew the solution to the problem. “It’s OK, daddy will fix it!”. 
+  <br><br>
+Obviously she had become accustomed to watching her father build and fix things around the house.  She had become confident in my abilities as I remodeled our houses and solved the myriad of 
+problems that come with home ownership. And I can assure you that having owned 8+ homes myself (from brand new to 75 years old) I have received a great education on what is needed to keep a
+ house running properly.
+<br><br>
+
+</p>
+        </div>
+<div class="textSection two">
+
+<p>My motto is “DON’T LIVE WITH IT, FIX IT!” It is silly that we all tend to let things go in our homes until we have family coming over, the big party, the leak becomes a flood, the grass is 
+now dead or we decide to sell the house. You should enjoy your home at its best all the time you live there. I think that is something we all deserve.
+<br><br>
+I can’t do everything, but I can do most things. If you want it done right, then I’m your guy. I always show up when I commit to and the work will be completed to your and my satisfaction. 
+Look around at the website to get an idea of what is possible.
+ <br><br>
+Give me a call, a text, an email. Let’s see how I can help you resolve your home repair challenges.</p>
+<img class="brettImage" :src="image"/>
+        </div>
+<Offer/>
+            
             </div>
-        <img class="brettImage" :src="image"/>
+       
         </div>
     </div>
     </div>
@@ -29,15 +42,23 @@
 
 <script>
 
-import brettImage from "../assets/Handyman Brett.jpg"
+import brettImage from "../assets/Handyman Brett.jpg";
+import waterTower from "../assets/golf ball water tower.jpg";
+import Offer from "./offer";
+
 
 export default {
     data:function (){
         return{
             image: brettImage,
+            waterTower: waterTower,
             services: []
         }
     },
+    components:{
+        Offer: Offer
+    }
+    ,
     mounted:
     
     function getServices (){
@@ -59,7 +80,7 @@ export default {
 
 .brettSection{
     width: 100%;
-    background-color: wheat;
+    background-color: #C3AD98;
     margin-top: -25px;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -75,13 +96,14 @@ export default {
 }
 
 .brettImage{
-    height: 500px;
-    margin-left: 20px;
-      z-index: 2;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    object-fit: cover;
 }
 
 .brettDescription{
-    display: flex;
+    display: block;
     width: 60%;
     margin-left: 20%;
     z-index: 2;
@@ -94,9 +116,28 @@ export default {
       z-index: 2;
 }
 
+.brettText h2{
+    font-size: 350%;
+}
+
 .underline{
     background-color: black;
     height: 2px;
+}
+
+.textSection{
+    display: flex;
+    margin: 1% 0 1% 0;
+}
+
+.two{
+     margin-left: -5%;
+}
+
+p{
+    text-align: left;
+    font-size: 120%;
+    margin: 0 5% 0 5%;
 }
 
 @media only screen and (max-width: 1080px)
