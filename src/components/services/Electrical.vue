@@ -9,12 +9,14 @@
             <button class="serviceCatagory" v-on:click="search= 'Odd Jobs' ">Odd Jobs</button>
             <button class="serviceCatagory" v-on:click="search= 'Plumbing' ">Plumbing</button>
 
+            <!-- add dropdown for mobile -->
+      
         </div>
-
-        <!-- <h2 v-for="(service) in this.services"
-        :key="service.index"
-        ></h2> -->
-
+          <div>
+            <b-form-select v-model="search" :options="options" size="lg" class="mt-3" ></b-form-select>
+        </div>
+<!-- 
+    map service lists based on search -->
         <div
         v-for="service in filterServices"
         :key="service.ServiceType"
@@ -25,11 +27,7 @@
              <p>{{service.ServiceDescription}}</p>
              <a href="/quote"><b-button variant="success" >Get A Quote</b-button></a>
     </div>
-<!-- 
-        <ul v-for="service in services" :key="service">
-            <li>{{service}}</li>
 
-        </ul> -->
 
    </div>
 </template>
@@ -53,12 +51,25 @@ export default {
             serviceTime: "",
             servicePrice: "",
             serviceImg: "",
-            queryString: `serviceType=Electrical`
+            queryString: `serviceType=Electrical`,
+            options: [
+          { value: null, text: 'Please select an option' },
+          { value: 'Electrical', text: 'Electrical' },
+          { value: 'Furniture', text: 'Furniture' },
+         { value: 'Interior', text: 'Interior' },
+        { value: 'Landscaping', text: 'Landscaping' },
+         { value: 'Odd Jobs', text: 'Odd Jobs' },
+          { value: 'Plumbing', text: 'Plumbing' },
+        ]
         }
     },
 
     components:{
        
+    },
+
+    props: {
+        searchType: String
     },
 
      mounted:
@@ -114,6 +125,39 @@ export default {
 }
 .serviceName{
     text-decoration: underline;
+}
+
+.mt-3{
+      visibility:hidden
+}
+
+@media only screen and (max-width: 800px) {
+
+.catagoryButtons{
+    display: none;
+}
+
+.mt-3{
+    visibility: visible;
+    width: 500px;
+   
+    padding: 5px 5px 5px 5px;
+    background-color: #377771;
+    color: white;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+.mt-3{
+   width: 300px;
+}
+}
+@media only screen and (max-width: 450px) {
+.mt-3{
+   width: 200px;
+}
+
 }
 
 

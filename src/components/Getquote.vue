@@ -14,18 +14,18 @@
   <form class="contact-form" @submit.prevent="submit">
     <label>Name</label>
 
-     <b-form-input v-model="form.from_name" placeholder="Enter your name"  name="from_name"  
+     <b-form-input class="formInput" v-model="form.from_name" placeholder="Enter your name"  name="from_name"  
      
      ></b-form-input>
 
     <br/>
     <label>Email</label>
 
-    <b-form-input :type="email" v-model="form.reply_to" placeholder="Enter your Email"  name="reply_to"  
+    <b-form-input class="formInput" :type="email" v-model="form.reply_to" placeholder="Enter your Email"  name="reply_to"  
           ></b-form-input>
           <br/>
     <label>Phone number</label>
-    <b-form-input :type="phone" v-model="form.phone_number" placeholder="Best number to reach you at"  name="phoneNumber"  
+    <b-form-input class="formInput" :type="phone" v-model="form.phone_number" placeholder="Best number to reach you at"  name="phoneNumber"  
      
      ></b-form-input>
     <!-- <input type="email" 
@@ -34,17 +34,21 @@
      class="input"
     > -->
     <br/>
+     <div class="formInput dropdown">
     <label>Service Type</label>
-    <b-form-select v-model="form.serviceType"   :options="serviceTypeList"  ></b-form-select>
-   
+    <br/>
+    <b-form-select class="formInput dropdown" v-model="form.serviceType"   :options="serviceTypeList"  ></b-form-select>
+     </div>
      <br/>
+     <div class="formInput dropdown">
        <label>Service Type</label>
-   <b-form-select v-model="form.serviceDetailed"  @input="filterServices"     >
+       
+   <b-form-select  v-model="form.serviceDetailed"  @input="filterServices"     >
     <b-form-select-option-group v-for="service in filterServices" :key="service.ServiceName">
     <b-form-select-option :value="service.ServiceName">{{service.ServiceName}}</b-form-select-option>
         </b-form-select-option-group>
    </b-form-select>
-   
+     </div>
      <br/>
      <div class="textArea">
     <label class="textAreaLabel">Message</label>
@@ -166,13 +170,19 @@ export default {
     background-color: #C3AD98;
 }
 
-.messageLabel{
+.formInput{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* .messageLabel{
     width: 300px;
 }
 .input{
     width: 300px;
     margin-left: 23px;
-}
+} */
 
 .textAreaLabel{
     margin-top: -50px;
@@ -182,8 +192,10 @@ export default {
     height: 300px;
 }
 
-.messageLabel{
+/* .messageLabel{
     width: 100%;
-}
+} */
+
+
 
 </style>

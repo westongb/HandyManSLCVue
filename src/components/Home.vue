@@ -25,7 +25,7 @@
     <div class="quote" id="Getquote">
         <div>
 
-   <GetQuote/>
+   <GetQuote style="width: 200%; margin-left: -55%"/>
 </div>
       
     </div>
@@ -103,12 +103,13 @@ export default {
 }
 
 .quote{
-    width: 50%;
+    width: 70%;
     height: 700px;
     border: solid black;
     display: flex;
     justify-content: center;
     margin: auto;
+   
     background-color: #C3AD98;
 }
 
@@ -131,10 +132,25 @@ export default {
     color: #C3AD98;
 }
 
+
+
+
+@media screen and (max-width: 1250px) {
+.quote{
+    width: 70%;
+}
+}
+
 @media screen and (max-width: 850px) {
+
+
+.handyman{
+    flex-direction: column-reverse;
+}    
 
 .handymanText{
     font-size: 170%;
+    width: 85%;
 }
 
 .brettImage{
@@ -146,8 +162,10 @@ export default {
     width: 80%;
 }
 
+.quote{
+    width: 80%;
 }
-
+}
 @media screen and (max-width: 750px) {
 
 .handymanText{
@@ -164,6 +182,11 @@ export default {
 .services{
     margin-left: 10%;
 }
+
+.quote{
+    width: 100%;
+}
+
 }
 
 </style>

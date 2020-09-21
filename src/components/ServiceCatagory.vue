@@ -3,7 +3,7 @@
         <h1>Types of Service Offered</h1>
         <b-container class="justify-content-md-center" fluid >
             <b-row class="serviceCatagory" >
-                <b-col class="serviceType1" md="auto" ><a href="/Services"><div class="serviceText"><h4>Electrical</h4><p class="serviceDesc">Lighting, appliances and outlets</p></div></a></b-col>
+                <b-col class="serviceType1" md="auto" ><a href="/Services" searchType="Electrical"><div class="serviceText"><h4>Electrical</h4><p class="serviceDesc">Lighting, appliances and outlets</p></div></a></b-col>
                 <b-col class="serviceType2" md="auto"><a href="/Services"><div class="serviceText"><h4>Interior</h4><p class="serviceDesc">A short decription of what is going on</p></div></a></b-col>
                 <b-col class="serviceType3" md="auto"><a href="/Services"><div class="serviceText"><h4>Landscaping</h4><p class="serviceDesc">Get your yard looking the way you want</p></div></a></b-col>
                  <b-col class="serviceType4" md="auto" ><a href="/Services"><div class="serviceText"><h4>Furnature</h4><p class="serviceDesc">Let us put together your new furnature</p></div></a></b-col>
@@ -28,7 +28,7 @@ export default {
      data:function (){
         return{
             // image: brettImage,
-            serviceImage: serviceImage,
+            serviceImage,
         }
 }
 }
