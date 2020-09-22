@@ -23,10 +23,12 @@
         
         :img-src="image1"
       >
+      <div class="textBackground">
       <h1>
         "Don't Live With it...Fix it!"
     </h1>
-       <button> <a  href="\quote">Get a quote</a></button>
+      <h4>Get a quote today and watch your 'fix it list' disappear. </h4>
+      </div>
       </b-carousel-slide>
 
       <!-- Slides with custom text -->
@@ -35,10 +37,12 @@
        :img-src="image2"
         
        >
+       <div class="textBackground">
         <h1>
-        "Don't Live With it...Fix it!"
+        "Don't wait till you find time. Let us take care of it."
     </h1>
-   <button> <a  href="\quote">Get a quote</a></button>
+        <h4>Dad has enouph things to do. We can take care of your around the house repairs. </h4>
+       </div>
       </b-carousel-slide>
 
       <!-- Slides with image only -->
@@ -47,11 +51,12 @@
        :img-src="doorknob"
         
        >
-       
+       <div class="textBackground">
         <h1>
-        "Don't Live With it...Fix it!"
+        Make your home look the way you want it to be!
     </h1>
-    <button> <a  href="\quote">Get a quote</a></button>
+  <h4>Do you look at your home and see what it could be? Let us make it happen. </h4>
+       </div>
        </b-carousel-slide>
 
       <!-- Slides with img slot -->
@@ -60,10 +65,12 @@
      class="carousel"
      
        :img-src="image3" img-alt="Blank image">
+       <div class="textBackground">
            <h1>
-        "Don't Live With it...Fix it!"
+        "Got a problem? There's a tool for that!"
     </h1>
-        <button> <a  href="\quote">Get a quote</a></button>
+     <h4>We have the tools and know how to fix all your household needs. </h4>
+       </div>
       </b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
@@ -71,10 +78,12 @@
     class="carousel"
       
        :img-src="image4" img-alt="Blank image">
+       <div class="textBackground">
         <h1>
-        "Don't Live With it...Fix it!"
+        "Make your yard the envy of the neighborhood!"
     </h1>
-     <button> <a  href="\quote">Get a quote</a></button>
+     <h4>Mow, cut, prune, you name it and we will take care of it.  </h4>
+       </div>
       </b-carousel-slide>
     </b-carousel>
 
@@ -119,29 +128,43 @@ import toolsImage5 from "../assets/annie-gray-WEWTGkPUVT0-unsplash.jpg"
     height: 400px;
 }
 
-h1{
-  height: 100px;
-  font-size: 150%;
-  color: black;
-  margin-bottom: 100px;
-  border-radius: 50px;
-  background-color: rgb(158, 149, 149, .01);
+.carousel h1{
+ 
+  font-size: 450%;
+  color:#101518;
+  margin-bottom: 5%;
+    -webkit-text-stroke: 2px black;
+}
+
+.carousel h4{
+  font-size: 200%;
+  color: #101518;
 }
 
 .carousel{
   height: 500px;
   justify-content: center;
-  font-size: 200%;
   
+  
+}
+
+.textBackground{
+ background-color: rgb(158, 149, 149, .5);
+ margin-bottom: 5%;
+ border-radius: 50px;
 }
 
 button{
   border-radius: 20px;
+  height: 50px;
+  width: 200px;
   background-color: rgb(146, 107, 53, .7);
+  
 }
 
 a{
   color: black;
+  font-weight: 400;
 }
 
 a:hover{

@@ -136,6 +136,7 @@ export default {
 
 .detail{
     font-weight: 700;
+    
 }
 
 @media only screen and (max-width: 800px) {

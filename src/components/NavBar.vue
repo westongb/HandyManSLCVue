@@ -8,9 +8,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-          <b-nav-item class="linkText" href="/">Home</b-nav-item>
-        <b-nav-item class="linkText" href="/Services">Services</b-nav-item>
-        <b-nav-item class="linkText" href="/meetBrett" >Your Handyman</b-nav-item>
+          <b-nav-item class="linkText lg" href="/" active>Home</b-nav-item>
+        <b-nav-item class="linkText lg" href="/Services" active>Services</b-nav-item>
+        <b-nav-item class="linkText lg" href="/meetBrett" active>Your Handyman</b-nav-item>
       </b-navbar-nav>
       
       <!-- Right aligned nav items -->
@@ -56,7 +56,7 @@ export default {
 
 .linkText{
   color:#38231c;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 

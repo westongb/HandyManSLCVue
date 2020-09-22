@@ -16,10 +16,10 @@
     </div>
     <div class="handyman">
         <p class="handymanText">My motto is “DON’T LIVE WITH IT, FIX IT!” It is silly that we all tend to let things go in our homes until we have family coming over, the big party, the leak becomes a flood, the grass is 
-            now dead or we decide to sell the house. You should enjoy your home at its best all the time you live there. I think that is something we all deserve. <a href="./meetBrett">...more</a></p>
+            now dead or we decide to sell the house. You should enjoy your home at its best all the time you live there. I think that is something we all deserve. <a class="brettLink" href="./meetBrett">...more</a></p>
         <img class="brettImage" :src="brettImage"/>
     </div>
-    <div>
+    <div class="reviewDiv">
         <Reviews/>
     </div>
     <div class="quote" id="Getquote">
@@ -70,13 +70,18 @@ export default {
 <style scoped>
 
 
+.brettLink:hover{
+    color: #001ec5;
+}
+
 .sectionSpace{
     height: 20px;
 }
 
 .brettImage{
     height: 55vh;
-
+    margin-right: 20%;
+ margin-top: 2%;
 }
 
 .services{
@@ -121,17 +126,20 @@ export default {
     padding-bottom: 5%;
    background-color: #62443A;
 }
-.brettImage{
-    margin-top: 2%;
-}
+
 
 .handymanText{
     width: 40%;
     font-size: 200%;
     margin-top: 5%;
     color: #C3AD98;
+    margin-left: 15%;
 }
 
+
+.reviewDiv{
+    display: none;
+}
 
 
 
@@ -139,6 +147,17 @@ export default {
 .quote{
     width: 70%;
 }
+
+.brettImage{
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.handymanText{
+
+margin-left: 10%;
+}
+
 }
 
 @media screen and (max-width: 850px) {
@@ -154,7 +173,8 @@ export default {
 }
 
 .brettImage{
-    margin-top: 5%;
+    margin:auto;
+    
 }
 
 .services{
@@ -165,6 +185,11 @@ export default {
 .quote{
     width: 80%;
 }
+
+.reviewDiv{
+    margin-bottom: 7%;
+}
+
 }
 @media screen and (max-width: 750px) {
 

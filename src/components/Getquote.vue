@@ -168,7 +168,7 @@ h1{
 }
 
 .contact-form{
-    margin-top: -100px;
+
 }
 
 .quoteform{
@@ -183,15 +183,6 @@ h1{
     margin: auto;
 }
 
-
-/* .messageLabel{
-    width: 300px;
-}
-.input{
-    width: 300px;
-    margin-left: 23px;
-} */
-
 .textAreaLabel{
     margin-top: -50px;
 }
@@ -200,12 +191,17 @@ h1{
     height: 300px;
 }
 
-/* .messageLabel{
-    width: 100%;
-} */
 
 .submitButton{
     background-color: #3f48cc;
 }
+
+
+@media screen and (max-width: 1050px) {
+    .quoteform{
+     
+    }
+}
+
 
 </style>
