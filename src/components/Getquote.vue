@@ -75,7 +75,7 @@
 <script>
 // import emailjs from 'emailjs-com';
 import emailjs from 'emailjs-com';
-import {uriBase} from '../const';
+import {serverUri} from '../const';
 
 
 
@@ -116,7 +116,7 @@ export default {
    mounted: 
    
        function getServices(){
-        fetch(`${uriBase}/api/Servicelist`, {
+        fetch(`${serverUri}/api/Servicelist`, {
             method: "GET",
                  }
         ).then(res=> res.json()).then(res => this.services= res)
