@@ -22,7 +22,7 @@ export default {
 .getQuote{
     margin-top: 50px;
     padding: 20px;
-    background-color: wheat;
+    background-color: #C3AD98;
     padding-bottom: 100px;
 }
 </style>

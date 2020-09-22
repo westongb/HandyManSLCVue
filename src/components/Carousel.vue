@@ -14,46 +14,67 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
+    
       <!-- Text slides with image -->
       <b-carousel-slide
       
-        caption="First slide"
+        
        class="carousel"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        
         :img-src="image1"
-      ></b-carousel-slide>
+      >
+      <h1>
+        "Don't Live With it...Fix it!"
+    </h1>
+       <button> <a  href="\quote">Get a quote</a></button>
+      </b-carousel-slide>
 
       <!-- Slides with custom text -->
       <b-carousel-slide
         class="carousel"
-       :img-src="image2">
-        <h1>Hello world!</h1>
+       :img-src="image2"
+        
+       >
+        <h1>
+        "Don't Live With it...Fix it!"
+    </h1>
+   <button> <a  href="\quote">Get a quote</a></button>
       </b-carousel-slide>
 
       <!-- Slides with image only -->
       <b-carousel-slide
        class="carousel"
-       :img-src="doorknob"></b-carousel-slide>
+       :img-src="doorknob"
+        
+       >
+       
+        <h1>
+        "Don't Live With it...Fix it!"
+    </h1>
+    <button> <a  href="\quote">Get a quote</a></button>
+       </b-carousel-slide>
 
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide
      class="carousel"
-       caption="Blank Image" 
+     
        :img-src="image3" img-alt="Blank image">
-          
-       
+           <h1>
+        "Don't Live With it...Fix it!"
+    </h1>
+        <button> <a  href="\quote">Get a quote</a></button>
       </b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
       <b-carousel-slide
     class="carousel"
-       caption="Blank Image" 
+      
        :img-src="image4" img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
+        <h1>
+        "Don't Live With it...Fix it!"
+    </h1>
+     <button> <a  href="\quote">Get a quote</a></button>
       </b-carousel-slide>
     </b-carousel>
 
@@ -98,8 +119,33 @@ import toolsImage5 from "../assets/annie-gray-WEWTGkPUVT0-unsplash.jpg"
     height: 400px;
 }
 
+h1{
+  height: 100px;
+  font-size: 150%;
+  color: black;
+  margin-bottom: 100px;
+  border-radius: 50px;
+  background-color: rgb(158, 149, 149, .01);
+}
+
 .carousel{
   height: 500px;
+  justify-content: center;
+  font-size: 200%;
+  
+}
+
+button{
+  border-radius: 20px;
+  background-color: rgb(146, 107, 53, .7);
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: #62443A ;
 }
 
 @media only screen and (max-width: 950px) {

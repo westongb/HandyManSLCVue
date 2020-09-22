@@ -104,7 +104,12 @@ export default {
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: #C3AD98 ;
-    color: #2d43c0;
+    color: #2337a7;
+  
+}
+
+.serviceTypeList p{
+      font-weight: 500;
 }
 
 .catagoryButtons{

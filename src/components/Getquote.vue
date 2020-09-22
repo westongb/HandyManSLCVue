@@ -163,9 +163,17 @@ export default {
 
 <style scoped>
 
+h1{
+    font-size: 350%;
+}
+
+.contact-form{
+    margin-top: -100px;
+}
+
 .quoteform{
     width: 90%;
-    height: 600px;
+    height: 700px;
     margin: auto;
     background-color: #C3AD98;
 }

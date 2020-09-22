@@ -51,11 +51,11 @@ export default {
 <style scoped>
 .navBar{
     background-image: url("../assets/abstract-antique-backdrop-background.jpg");
-    z-index: 2;
+   
 }
 
 .linkText{
-  color:#62443A;
+  color:#38231c;
   font-weight: 900;
 }
 

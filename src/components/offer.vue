@@ -2,8 +2,8 @@
 <div>
      <a href="/quote">
      <button>
-        <h1 class="offerText"> “DON’T LIVE WITH IT, FIX IT!”</h1>
-        <h2 class="offerText">Get a Quote Today </h2>
+        
+        <h1 class="offerText">GET A FREE QUOTE TODAY!! </h1>
      </button>
         </a>
 </div>

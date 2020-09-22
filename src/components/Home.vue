@@ -25,7 +25,7 @@
     <div class="quote" id="Getquote">
         <div>
 
-   <GetQuote style="width: 200%; margin-left: -55%"/>
+   <GetQuote style="width: 200%; margin-left: -55%;"/>
 </div>
       
     </div>
@@ -104,7 +104,7 @@ export default {
 
 .quote{
     width: 70%;
-    height: 700px;
+    height: 800px;
     border: solid black;
     display: flex;
     justify-content: center;
