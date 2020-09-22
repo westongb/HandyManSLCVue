@@ -20,7 +20,7 @@ button{
   
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 150px;
     padding-top: 20px;
     margin: 0% 0 5% 0;
     width: 100%;
@@ -39,5 +39,6 @@ button:hover{
 
 .offerText{
     margin: auto;
+    font-size: 250%;
 }
 </style>
