@@ -58,7 +58,7 @@
     rows="4"
     ></b-form-textarea>
      <br/>
-      <b-button @click="submit" value="Send" block variant="success">Submit Quote Request</b-button>
+      <b-button @click="submit" value="Send" block variant="success" class="submitButton">Submit Quote Request</b-button>
    
      </div>
   </form>
@@ -196,6 +196,8 @@ export default {
     width: 100%;
 } */
 
-
+.submitButton{
+    background-color: #3f48cc;
+}
 
 </style>

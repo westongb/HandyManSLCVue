@@ -3,6 +3,7 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
+      
       :interval="4000"
       controls
       indicators
@@ -15,29 +16,29 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        class="firstSlide"
+      
         caption="First slide"
-        style="height: 500px; "
+       class="carousel"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
         :img-src="image1"
       ></b-carousel-slide>
 
       <!-- Slides with custom text -->
       <b-carousel-slide
-        style="height: 500px;"
+        class="carousel"
        :img-src="image2">
         <h1>Hello world!</h1>
       </b-carousel-slide>
 
       <!-- Slides with image only -->
       <b-carousel-slide
-        style="height: 500px; "
+       class="carousel"
        :img-src="doorknob"></b-carousel-slide>
 
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide
-       style="height: 500px"
+     class="carousel"
        caption="Blank Image" 
        :img-src="image3" img-alt="Blank image">
           
@@ -46,7 +47,7 @@
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
       <b-carousel-slide
-        style="height: 500px"
+    class="carousel"
        caption="Blank Image" 
        :img-src="image4" img-alt="Blank image">
         <p>
@@ -97,6 +98,26 @@ import toolsImage5 from "../assets/annie-gray-WEWTGkPUVT0-unsplash.jpg"
     height: 400px;
 }
 
+.carousel{
+  height: 500px;
+}
 
+@media only screen and (max-width: 950px) {
+ .carousel{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .carousel{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel{
+    height: 200px;
+  }
+}
 
 </style>

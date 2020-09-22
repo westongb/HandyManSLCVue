@@ -26,8 +26,8 @@ button{
     width: 100%;
     justify-content: center;
     color: white;
-    background-color: #377771;
-    box-shadow: 5px 5px #2f746d;
+    background-color: #2d43c0;
+    box-shadow: 5px 5px #2d43c0;
     
 }
 

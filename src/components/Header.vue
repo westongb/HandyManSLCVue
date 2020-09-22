@@ -4,7 +4,7 @@
          
             <ul class="headerGroup">
                    <div>
-                <img class="logo" src="@/assets/154-1547479_handyman-logos-for-business-cards-download-handyman.png"/>
+                <img class="logo" src="@/assets/Handyman logo finished.png"/>
             </div>
                 <li >
                     <button  class="headerList"><a href="tel:+1-801-643-6574">
@@ -92,14 +92,14 @@ export default {
 }
 
 .iconImage{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 .headerList{
     display: flex;
-    height: 80px;
+    height: 100px;
     border-width: .002em;
-    border: solid  darkslategray;
+    border: solid  #3f3f3f;
     padding: 2px;
     padding-right: 6px;
     background-color: #C3AD98;
@@ -109,7 +109,7 @@ export default {
     }
 
 .headerList:hover{
-    background-color: #62443A;
+    background-color: #2d43c0;
      background-image: url();
 }
 
@@ -118,14 +118,15 @@ export default {
 }
 
 .headerText{
-    color: darkslategray;
+    color: #3f3f3f;
     font-size: .8em;
     margin: auto;
     
 }
 
 .logo{
-    width: 200px;
+    width: 250px;
+    margin-top: -20px;
 }
 
 .calenderIcon{

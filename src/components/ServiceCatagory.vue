@@ -228,7 +228,7 @@ export default {
  
     justify-content: center;
     align-items: center;
-    color: brown;
+    color: #2d43c0;
     opacity: 0;
      position: absolute;
    
