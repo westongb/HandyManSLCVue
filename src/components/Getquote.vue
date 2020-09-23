@@ -11,7 +11,7 @@
 <div class="quoteform">
 
     <h1>Get a Quote</h1>
-  <form class="contact-form" @submit.prevent="submit">
+  <form class="contact-form" id="myForm" @submit.prevent="submit">
     <label>Name</label>
 
      <b-form-input class="formInput" v-model="form.from_name" placeholder="Enter your name"  name="from_name"  
@@ -44,7 +44,7 @@
        <label>Service Type</label>
        
    <b-form-select  v-model="form.serviceDetailed"  @input="filterServices"     >
-    <b-form-select-option-group v-for="service in filterServices" :key="service.ServiceName">
+    <b-form-select-option-group label="" v-for="service in filterServices" :key="service.ServiceName">
     <b-form-select-option :value="service.ServiceName">{{service.ServiceName}}</b-form-select-option>
         </b-form-select-option-group>
    </b-form-select>
@@ -81,7 +81,7 @@ import {serverUri} from '../const';
 
 export default {
 
-    props: 'ModalName',
+    props: ['ModalName'],
 
      data() {
       return {
@@ -127,23 +127,28 @@ export default {
 
 
   methods: {
+      clearForm() {
 
+   
+        this.data.form.to_name = '',
+        this.data.form.from_name = '',
+        this.data.form.phone_number = '',
+        this.data.form.reply_to = '',
+        this.data.form.message = '',
+        this.data.form.html = '',
+        this.data.form.serviceType = ''
+        
+      },
      submit ()  {
-        //  var   template_params= {
-        // "reply_to": this.email,
-        // "name": this.name,
-        // "to_name": "to_name_value",
-        // "html": this.html
-        //     }
-      
-        event.preventDefault()
-        console.log(this.form.phone_number)
+          
+        event.preventDefault(event)
         emailjs.send('gmail', 'template_RZenTIyl', {reply_from : this.form.reply_to, html: this.form.message, from_name: this.form.from_name, service_Type: this.form.serviceType, service_detail: this.form.serviceDetailed, phone_Number: this.form.phone_number }, 'user_MATCgaEeoHw119UWC9Txw')
         .then((result) => {
             console.log('SUCCESS!', result.status, result.text);
+             alert("Your Message Has Been Sent")
         }, (error) => {
             console.log('FAILED...', error);
-        });
+        }).then(document.getElementById("myForm").reset())
     }},
     computed:
     {   filterServices () {

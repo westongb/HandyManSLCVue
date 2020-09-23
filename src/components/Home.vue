@@ -58,7 +58,8 @@ export default {
     },
     data(){
         return{
-            brettImage: brettImage
+            brettImage: brettImage,
+            product: ''
         }
     }
 }

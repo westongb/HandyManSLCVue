@@ -59,19 +59,19 @@ export default {
         Offer: Offer
     }
     ,
-    mounted:
+    // mounted:
     
-    function getServices (){
-        fetch(`http://localhost:5000/services`, {
-            method: "GET",
-                 }
-        ).then(res=> 
-    {console.log(res.data)
-    },
-    (error) =>{
-    console.log(error);
-    });
-    }
+    // function getServices (){
+    //     fetch(`http://localhost:5000/services`, {
+    //         method: "GET",
+    //              }
+    //     ).then(res=> 
+    // {console.log(res.data)
+    // },
+    // (error) =>{
+    // console.log(error);
+    // });
+    // }
     }
 
 </script>
@@ -153,6 +153,19 @@ p{
 .brettImage{
     height: 300px;
 }
+
+.brettDescription{
+    margin: auto;
 }
 
+
+.textSection{
+    flex-direction: column;
+}
+
+.two{
+    flex-direction: column-reverse;
+    margin: auto;
+}
+}
 </style>
