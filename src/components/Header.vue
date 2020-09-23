@@ -94,6 +94,7 @@ export default {
 .iconImage{
     height: 50px;
     width: 50px;
+ 
 }
 .headerList{
     display: flex;
@@ -101,10 +102,11 @@ export default {
     border-width: .002em;
     border: solid  #3f3f3f;
     padding: 2px;
-    padding-right: 6px;
+    padding-right: 4px;
     background-color: #C3AD98;
     align-items: center;
     justify-self: center;
+  
     border-radius: 10px;
     }
 
@@ -120,7 +122,7 @@ export default {
 .headerText{
     color: #3f3f3f;
     font-size: .8em;
-    margin: auto;
+      margin-left: 10%;
     
 }
 
@@ -139,7 +141,16 @@ export default {
     
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+.headerList{
+    margin-right: 10px;
+    width: 95%;
+}
+
+}
+
+
+@media only screen and (max-width: 850px) {
 
 .detail{
     /* display: none; */
@@ -148,10 +159,12 @@ export default {
 .logo{
     width: 150px;
     margin-left: -20px;
+     margin-top: 0px;
 }
 
 .headerList{
     margin-right: 10px;
+    width: 90%;
 }  
 }
 
@@ -160,6 +173,40 @@ export default {
 .detail{
     display: none;
 }
+
+.headerList{
+    width: 80%;
 }
+
+.headerGroup{
+    width: 90%;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 350px) {
+.headerGroup{
+    width: 90%;
+}
+
+.iconImage{
+    height: 30px;
+    width: 30px;
+}
+.headerList{
+    background-color: rgb(195, 173, 152, .1);
+    border: thin;
+    margin-top: -45%;
+}
+
+.headerGroup{
+    
+}
+
+}
+
 </style>
 

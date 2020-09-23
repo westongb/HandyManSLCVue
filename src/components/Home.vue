@@ -25,7 +25,7 @@
     <div class="quote" id="Getquote">
         <div>
 
-   <GetQuote style="width: 200%; margin-left: -55%;"/>
+   <GetQuote style="width: 160%; margin-left: -25%;"/>
 </div>
       
     </div>
@@ -209,8 +209,20 @@ margin-left: 10%;
 }
 
 .quote{
-    width: 100%;
+    width: 60%;
+    margin-left: 18%;
 }
+
+}
+
+
+@media (max-width: 450px) {
+
+.brettImage{
+    height: 45vh;
+    width: 60vw;
+}
+
 
 }
 

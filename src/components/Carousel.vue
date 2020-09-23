@@ -175,18 +175,52 @@ a:hover{
  .carousel{
     height: 400px;
   }
+
+  .carousel h1{
+ 
+  font-size: 350%;
+ 
 }
 
+.carousel h4{
+  font-size: 150%;
+
+}
+
+}
 @media only screen and (max-width: 650px) {
   .carousel{
     height: 300px;
   }
+
+
+  .carousel h1{
+ 
+  font-size: 250%;
+}
+
+.carousel h4{
+  font-size: 100%;
+
+}
+
 }
 
 @media only screen and (max-width: 450px) {
   .carousel{
     height: 200px;
   }
+
+  .carousel h1{
+ 
+  font-size: 150%;
+}
+
+.carousel h4{
+  font-size: 80%;
+
+}
+
 }
 
 </style>
