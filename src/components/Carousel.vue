@@ -26,7 +26,7 @@
       <h1>
         "Don't Live With it...Fix it!"
     </h1>
-      <h4>Get a quote today and watch your 'fix it list' disappear. </h4>
+      <h4>Get a quote today and watch your "fix it" list disappear. </h4>
       </div>
       </b-carousel-slide>
 
@@ -38,9 +38,9 @@
        >
        <div class="textBackground">
         <h1>
-        "Don't wait till you find time. Let us take care of it."
+        "Don't wait till you find time. <br/> Let us take care of it."
     </h1>
-        <h4>Dad has enouph things to do. We can take care of your around the house repairs. </h4>
+        <h4>Dad has enough things to do. <br/> We can take care of your around the house repairs. </h4>
        </div>
       </b-carousel-slide>
 
@@ -52,7 +52,7 @@
        >
        <div class="textBackground">
         <h1>
-        Make your home look the way you want it to be!
+        Have your home look the way you imagine it!
     </h1>
   <h4>Do you look at your home and see what it could be? Let us make it happen. </h4>
        </div>
@@ -66,7 +66,7 @@
        :img-src="image3" img-alt="Blank image">
        <div class="textBackground">
            <h1>
-        "Got a problem? There's a tool for that!"
+        "Got a problem? We've got a tool for that!" 
     </h1>
      <h4>We have the tools and know how to fix all your household needs. </h4>
        </div>
@@ -81,7 +81,7 @@
         <h1>
         "Make your yard the envy of the neighborhood!"
     </h1>
-     <h4>Mow, cut, prune, you name it and we will take care of it.  </h4>
+     <h4>Mow, cut, prune, you name it and we can take care of it.  </h4>
        </div>
       </b-carousel-slide>
     </b-carousel>
@@ -91,7 +91,7 @@
 
 <script>
 
-  import toolsImage1 from "../assets/neonbrand-SiYxQRATT2M-unsplash2.jpg"
+  import toolsImage1 from "../assets/porch-2421146_960_720.jpg"
   import toolsImage2 from "../assets/person-holding-pencil-1388944.jpg"
   import toolsImage3 from "../assets/grinderCompressed.jpg"
   import toolsImage4 from "../assets/Webp.net-compress-image (2) (1).jpg"

@@ -41,7 +41,7 @@
      </div>
      <br/>
      <div class="formInput dropdown">
-       <label>Service Type</label>
+       <label>Service Details</label>
        
    <b-form-select  v-model="form.serviceDetailed"  @input="filterServices"     >
     <b-form-select-option-group label="" v-for="service in filterServices" :key="service.ServiceName">
@@ -180,7 +180,7 @@ h1{
     width: 90%;
     height: 700px;
     margin: auto;
-    background-color: #C3AD98;
+    background-color: #cc9463;
 }
 
 .formInput{

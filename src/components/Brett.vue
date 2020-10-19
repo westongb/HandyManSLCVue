@@ -25,10 +25,10 @@ problems that come with home ownership. And I can assure you that having owned 8
 <p>My motto is “DON’T LIVE WITH IT, FIX IT!” It is silly that we all tend to let things go in our homes until we have family coming over, the big party, the leak becomes a flood, the grass is 
 now dead or we decide to sell the house. You should enjoy your home at its best all the time you live there. I think that is something we all deserve.
 <br><br>
-I can’t do everything, but I can do most things. If you want it done right, then I’m your guy. I always show up when I commit to and the work will be completed to your and my satisfaction. 
+I can’t do everything, but I can do most things. If you want it done right, then I’m your guy. I always show up on the day and time you schedule. The work will be completed to your satisfaction. And mine too.
 Look around at the website to get an idea of what is possible.
  <br><br>
-Give me a call, a text, an email. Let’s see how I can help you resolve your home repair challenges.</p>
+Give me a call, a text, an email. Let’s see how I can fix it.</p>
 <img class="brettImage" :src="image"/>
         </div>
 <Offer/>

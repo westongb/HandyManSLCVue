@@ -116,7 +116,7 @@ export default {
     justify-content: center;
     margin: auto;
    
-    background-color: #C3AD98;
+    background-color: #cc9463;
 }
 
 .handyman{

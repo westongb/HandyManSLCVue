@@ -103,7 +103,7 @@ export default {
     border-color: black;
     margin-bottom: 20px;
     border-radius: 15px;
-    background-color: #C3AD98 ;
+    background-color: #cc9463 ;
     color: #2337a7;
   
 }

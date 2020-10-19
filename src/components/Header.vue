@@ -9,9 +9,9 @@
                 <li >
                     <button  class="headerList"><a href="tel:+1-801-643-6574">
                         <img class="iconImage" src="https://cdn0.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-3/24/5046-512.png"/>
-                        <div>
+                        <div class="textBox">
                         <h4 class="headerText detail" >801-643-6574</h4>
-                        <h4 class="headerText detail">Give me a call or send a text</h4>
+                        <h4 class="headerText detail two">Give me a call or text</h4>
                        
                     </div>
                     </a>
@@ -24,9 +24,9 @@
                         <a  href="\quote">
                         <!-- <img class="iconImage" src="https://cdn0.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-3/24/5046-512.png"/> -->
                         <b-icon icon="calendar" class="h1 mb-1"></b-icon>
-                        <div>
+                        <div class="textBox">
                         <h4 class="headerText detail" >Get A Quote</h4>
-                        <h4 class="headerText detail">Let me know what you need!</h4>
+                        <h4 class="headerText detail two">Tell me what you need!</h4>
                        
                     </div>
                         </a>
@@ -36,9 +36,9 @@
                     <button href="#" class="headerList">
                         <a href = "mailto: abc@example.com">
                         <b-icon icon="envelope" class="h1 mb-2"></b-icon>
-                        <div>
-                        <h4 class="headerText detail">brettEmail@email.com</h4>
-                        <h4 class="headerText detail">Send me and email</h4>
+                        <div class="textBox">
+                        <h4 class="headerText detail">MyHandyManBrett@gmail</h4>
+                        <h4 class="headerText detail two">Send me and email</h4>
                   
                     </div>
                         </a>
@@ -96,14 +96,19 @@ export default {
     width: 50px;
  
 }
+
+.headerList a{
+    width: 110%;
+    margin-left: 4%;
+}
+
 .headerList{
     display: flex;
     height: 100px;
     border-width: .002em;
     border: solid  #3f3f3f;
     padding: 2px;
-    padding-right: 4px;
-    background-color: #C3AD98;
+    background-color: #cc9463;
     align-items: center;
     justify-self: center;
   
@@ -119,10 +124,14 @@ export default {
     color: #C3AD98;
 }
 
+.textBox{
+    margin-right: 0px;
+}
+
 .headerText{
     color: #3f3f3f;
     font-size: .8em;
-      margin-left: 10%;
+    margin: 3% 10% 0% 0%;
     
 }
 
@@ -138,7 +147,12 @@ export default {
 
 .detail{
     font-weight: 700;
-    
+    text-align: center;
+}
+
+.two{
+    text-decoration: none;
+    margin-left: 5%;
 }
 
 @media only screen and (max-width: 950px) {

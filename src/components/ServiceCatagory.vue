@@ -5,10 +5,10 @@
             <b-row class="serviceCatagory" >
                 <b-col class="serviceType1" md="auto" ><a href="/Services" searchType="Electrical"><div class="serviceText"><h4>Electrical</h4><p class="serviceDesc">Lighting, appliances and outlets</p></div></a></b-col>
                 <b-col class="serviceType2" md="auto"><a href="/Services"><div class="serviceText"><h4>Interior</h4><p class="serviceDesc">A short decription of what is going on</p></div></a></b-col>
-                <b-col class="serviceType3" md="auto"><a href="/Services"><div class="serviceText"><h4>Landscaping</h4><p class="serviceDesc">Get your yard looking the way you want</p></div></a></b-col>
-                 <b-col class="serviceType4" md="auto" ><a href="/Services"><div class="serviceText"><h4>Furnature</h4><p class="serviceDesc">Let us put together your new furnature</p></div></a></b-col>
-                <b-col class="serviceType5" md="auto"><a href="/Services"><div class="serviceText"><h4>Plumbing</h4><p class="serviceDesc">Got issues with your pipes. We can do that.</p></div></a></b-col>
-                <b-col class="serviceType6" md="auto"><a href="/Services"><div class="serviceText"><h4>Odd Jobs</h4><p class="serviceDesc">Not sure how to describe your issue? Let us help.</p></div></a></b-col>
+                <b-col class="serviceType3" md="auto"><a href="/Services"><div class="serviceText"><h4>Landscaping</h4><p class="serviceDesc">Have a "Model Home" yard.</p></div></a></b-col>
+                <b-col class="serviceType4" md="auto" ><a href="/Services"><div class="serviceText"><h4>Furnature</h4><p class="serviceDesc">Let us put together your new furniture</p></div></a></b-col>
+                <b-col class="serviceType5" md="auto"><a href="/Services"><div class="serviceText"><h4>Plumbing</h4><p class="serviceDesc plumb">Got issues with your pipes? We got you covered.</p></div></a></b-col>
+                <b-col class="serviceType6" md="auto"><a href="/Services"><div class="serviceText"><h4>Odd Jobs</h4><p class="serviceDesc">Everything else. Let us help.</p></div></a></b-col>
             </b-row>
         </b-container>
     </div>
@@ -48,9 +48,10 @@ export default {
     height: 230px;
     border-radius: 205px;
     margin: 1%;
-    width: 230px;
+    width: 13vw;
     align-items: center;
-    
+       border: solid black;
+    border-width: thin;
 }
 
 .serviceType1:hover {
@@ -75,10 +76,11 @@ export default {
      background-size: 200%;
     height: 230px;
     border-radius: 205px;
-      margin: 1%;
-    width: 230px;
+    margin: 1%;
+    width: 13vw;
     align-items: center;
-    
+    border: solid black;
+    border-width: thin;
 }
 
 .serviceType2:hover {
@@ -101,13 +103,13 @@ export default {
  
   background-repeat: no-repeat;
     background-size: 200%;
-    height: 230px;
+     height: 230px;
     border-radius: 205px;
-      margin: 1%;
-    width: 230px;
+    margin: 1%;
+    width: 13vw;
     align-items: center;
-
-    
+ border: solid black;
+border-width: thin;
 }
 
 .serviceType3:hover {
@@ -132,11 +134,11 @@ export default {
       background-size: 200%;
     height: 230px;
     border-radius: 205px;
-       margin: 1%;
-    width: 230px;
+    margin: 1%;
+    width: 13vw;
     align-items: center;
-
-    
+ border: solid black;
+    border-width: thin;
 }
 
 .serviceType4:hover {
@@ -160,11 +162,11 @@ export default {
     background-size: 150%;
     height: 230px;
     border-radius: 205px;
-     margin: 1%;
-    width: 230px;
+    margin: 1%;
+    width: 13vw;
     align-items: center;
-
-    
+ border: solid black;
+    border-width: thin;
 }
 
 .serviceType5:hover {
@@ -189,11 +191,11 @@ export default {
   
     height: 230px;
     border-radius: 205px;
-     margin: 1%;
-    width: 230px;
+    margin: 1%;
+    width: 13vw;
     align-items: center;
-
-    
+     border: solid black;
+     border-width: thin;
 }
 
 .serviceType6:hover {
@@ -211,8 +213,8 @@ export default {
 }
 
 .service{
-    width: 90%;
-    margin: 0% 5% 0% 5%;
+    width: 100%;
+    margin: auto;
 }
 
 .service h1{
@@ -225,7 +227,7 @@ export default {
     flex-direction: column;
     height: 150px;
     width: 85%;
- 
+    margin-top: 5%;
     justify-content: center;
     align-items: center;
     color: #2d43c0;
@@ -244,39 +246,152 @@ h4{
 }
 
 .serviceDesc{
+    font-size: 120%;
+    text-align: center;
+}
+
+.plumb{
     font-size: 100%;
 }
 
-@media only screen and (max-width: 880px){
+@media only screen and (max-width: 1550px){
+
+
+.serviceType2 {
+   background-size: 200%;
+}
+
+.serviceType3 {
+      background-size: 200%;
+}
+
+.serviceType4 {
+    background-size: 200%;
+}
+
+
+.serviceType5 {
+   background-size: 200%;  
+}
+
+
+.serviceType6 {
+     background-size: 200%;
+}
+}
+
+@media only screen and (max-width: 1250px){
+
+.serviceText{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.serviceDesc{
+    text-align: center;
+      font-size: 90%;
+}
+
+.plumb{
+    font-size: 80%;
+}
+
+.serviceType2 {
+   background-size: 250%;
+}
+
+.serviceType3 {
+     background-size: 250%;
+}
+
+.serviceType4 {
+    background-size: 250%;
+}
+
+
+.serviceType5 {
+  background-size: 250%; 
+}
+
+
+.serviceType6 {
+    background-size: 250%;
+}
+}
+
+@media only screen and (max-width: 1000px){
+
+.service{
+    margin: auto;
+}
 
 .serviceType1 {
     border-radius: 50px;
     width: 400px;
+background-size: 100%;
+background-position: bottom;
 
 }
 
 .serviceType2 {
  border-radius: 50px;
     width: 400px;
+    background-size: 100%;
 }
 
 .serviceType3 {
  border-radius: 50px;
     width: 400px;
+    background-size: 100%;
 }
 
 .serviceType4 {
  border-radius: 50px;
     width: 400px;
+    background-size: 100%;
 }
 
 .serviceType5 {
  border-radius: 50px;
     width: 400px;
+    background-size: 100%;
 }
 .serviceType6 {
  border-radius: 50px;
     width: 400px;
+    background-size: 100%;
+}
+
+}
+
+@media only screen and (max-width: 400px){
+
+.service{
+    margin: auto;
+}
+
+.serviceType1 {
+   
+background-size: 200%;
+}
+
+.serviceType2 {
+background-size: 200%;
+}
+
+.serviceType3 {
+background-size: 200%;
+}
+
+.serviceType4 {
+background-size: 200%;
+}
+
+.serviceType5 {
+background-size: 200%;
+}
+.serviceType6 {
+background-size: 200%;
 }
 
 }
