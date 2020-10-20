@@ -42,16 +42,16 @@ export default {
      data:function (){
         return{
             
-            search:"Electrical",
+            search:"none",
             services: [],
             serviceList: "",
-            serviceType: "Electrical",
+            serviceType: "none",
             serviceDescription: "",
             serviceName: "",
             serviceTime: "",
             servicePrice: "",
             serviceImg: "",
-            queryString: `serviceType=Electrical`,
+            queryString: `serviceType=none`,
             options: [
           { value: null, text: 'Please select an option' },
           { value: 'Electrical', text: 'Electrical' },
@@ -65,7 +65,7 @@ export default {
     },
 
     components:{
-       
+      
     },
 
     props: {
@@ -80,6 +80,17 @@ export default {
                  }
         ).then(res=> res.json()).then(res => this.services= res)
     },
+
+    
+    
+      created()
+  {
+    let uri = window.location.search.substring(1); 
+    let params = new URLSearchParams(uri);
+    this.search =params.get("servicetype");
+  },
+
+    
 
     computed:
     {

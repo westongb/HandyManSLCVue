@@ -34,11 +34,11 @@
                 </li>
                  <li >
                     <button href="#" class="headerList">
-                        <a href = "mailto: abc@example.com">
+                        <a href = "mailto: MyHandyManBrett@gmail.com">
                         <b-icon icon="envelope" class="h1 mb-2"></b-icon>
                         <div class="textBox">
                         <h4 class="headerText detail">MyHandyManBrett@gmail</h4>
-                        <h4 class="headerText detail two">Send me and email</h4>
+                        <h4 class="headerText detail two">Send me an email</h4>
                   
                     </div>
                         </a>
@@ -148,10 +148,11 @@ export default {
 .detail{
     font-weight: 700;
     text-align: center;
+    text-decoration: none;
 }
 
 .two{
-    text-decoration: none;
+    
     margin-left: 5%;
 }
 

@@ -3,12 +3,12 @@
         <h1>Types of Service Offered</h1>
         <b-container class="justify-content-md-center" fluid >
             <b-row class="serviceCatagory" >
-                <b-col class="serviceType1" md="auto" ><a href="/Services" searchType="Electrical"><div class="serviceText"><h4>Electrical</h4><p class="serviceDesc">Lighting, appliances and outlets</p></div></a></b-col>
-                <b-col class="serviceType2" md="auto"><a href="/Services"><div class="serviceText"><h4>Interior</h4><p class="serviceDesc">A short decription of what is going on</p></div></a></b-col>
-                <b-col class="serviceType3" md="auto"><a href="/Services"><div class="serviceText"><h4>Landscaping</h4><p class="serviceDesc">Have a "Model Home" yard.</p></div></a></b-col>
-                <b-col class="serviceType4" md="auto" ><a href="/Services"><div class="serviceText"><h4>Furnature</h4><p class="serviceDesc">Let us put together your new furniture</p></div></a></b-col>
-                <b-col class="serviceType5" md="auto"><a href="/Services"><div class="serviceText"><h4>Plumbing</h4><p class="serviceDesc plumb">Got issues with your pipes? We got you covered.</p></div></a></b-col>
-                <b-col class="serviceType6" md="auto"><a href="/Services"><div class="serviceText"><h4>Odd Jobs</h4><p class="serviceDesc">Everything else. Let us help.</p></div></a></b-col>
+                <b-col class="serviceType1" md="auto" ><a href="/Services/?servicetype=Electrical" searchType="Electrical"><div class="serviceText"><h4>Electrical</h4><p class="serviceDesc">Lighting, appliances and outlets</p></div></a></b-col>
+                <b-col class="serviceType2" md="auto"><a href="/Services/?servicetype=Interior"><div class="serviceText"><h4>Interior</h4><p class="serviceDesc">A short decription of what is going on</p></div></a></b-col>
+                <b-col class="serviceType3" md="auto"><a href="/Services/?servicetype=Landscaping"><div class="serviceText"><h4>Landscaping</h4><p class="serviceDesc">Have a "Model Home" yard.</p></div></a></b-col>
+                <b-col class="serviceType4" md="auto" ><a href="/Services/?servicetype=Furniture"><div class="serviceText"><h4>Furniture</h4><p class="serviceDesc">Let us put together your new furniture</p></div></a></b-col>
+                <b-col class="serviceType5" md="auto"><a href="/Services/?servicetype=Plumbing"><div class="serviceText"><h4>Plumbing</h4><p class="serviceDesc plumb">Got issues with your pipes? We got you covered.</p></div></a></b-col>
+                <b-col class="serviceType6" md="auto"><a href="/Services/?servicetype=Odd Jobs"><div class="serviceText"><h4>Odd Jobs</h4><p class="serviceDesc">Everything else. Let us help.</p></div></a></b-col>
             </b-row>
         </b-container>
     </div>

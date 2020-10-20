@@ -4,7 +4,7 @@
       id="carousel-1"
       v-model="slide"
       
-      :interval="4000"
+      :interval="10500"
       controls
       indicators
       background="#ababab"
@@ -26,7 +26,7 @@
       <h1>
         "Don't Live With it...Fix it!"
     </h1>
-      <h4>Get a quote today and watch your "fix it" list disappear. </h4>
+      <h4>Get a quote today and watch your "fix-it" list disappear. </h4>
       </div>
       </b-carousel-slide>
 
@@ -38,7 +38,7 @@
        >
        <div class="textBackground">
         <h1>
-        "Don't wait till you find time. <br/> Let us take care of it."
+        "Don't wait Until you find time. <br/> Let us take care of it."
     </h1>
         <h4>Dad has enough things to do. <br/> We can take care of your around the house repairs. </h4>
        </div>
@@ -54,7 +54,7 @@
         <h1>
         Have your home look the way you imagine it!
     </h1>
-  <h4>Do you look at your home and see what it could be? Let us make it happen. </h4>
+  <h4>Do you look at your home and see what it could be? <br/> Let us make it happen. </h4>
        </div>
        </b-carousel-slide>
 
@@ -68,7 +68,7 @@
            <h1>
         "Got a problem? We've got a tool for that!" 
     </h1>
-     <h4>We have the tools and know how to fix all your household needs. </h4>
+     <h4>We have the tools and know-how to fix all your household needs. </h4>
        </div>
       </b-carousel-slide>
 
