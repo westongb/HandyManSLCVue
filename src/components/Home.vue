@@ -116,7 +116,7 @@ export default {
     justify-content: center;
     margin: auto;
    
-    background-color: #cc9463;
+    background-color: #CA9852;
 }
 
 .handyman{
@@ -125,7 +125,7 @@ export default {
     margin-top: 10%;
     margin-bottom: 10%;
     padding-bottom: 5%;
-   background-color: #62443A;
+   background-color: #513918;
 }
 
 
@@ -133,7 +133,7 @@ export default {
     width: 40%;
     font-size: 200%;
     margin-top: 5%;
-    color: #C3AD98;
+    color: white;
     margin-left: 15%;
 }
 

@@ -108,7 +108,7 @@ export default {
     border-width: .002em;
     border: solid  #3f3f3f;
     padding: 2px;
-    background-color: #cc9463;
+    background-color: #CA9852;
     align-items: center;
     justify-self: center;
   
@@ -121,7 +121,7 @@ export default {
 }
 
 .headerList:hover .headerText{
-    color: #C3AD98;
+    color: #CA9852;
 }
 
 .textBox{

@@ -1,20 +1,21 @@
 <template>
    <div >
-
+            
         <div class="catagoryButtons">
-            <button class="serviceCatagory" v-on:click="search= 'Electrical' " >Electrical</button>
+            <button id="Electrical" class="serviceCatagory" v-on:click="search= 'Electrical' " >Electrical</button>
             <button class="serviceCatagory" v-on:click="search= 'Furniture' ">Furniture</button>
             <button class="serviceCatagory" v-on:click="search= 'Interior' ">Interior</button>
              <button class="serviceCatagory" v-on:click="search= 'Landscaping' ">Landscaping</button>
             <button class="serviceCatagory" v-on:click="search= 'Odd Jobs' ">Odd Jobs</button>
             <button class="serviceCatagory" v-on:click="search= 'Plumbing' ">Plumbing</button>
-
+         
             <!-- add dropdown for mobile -->
       
         </div>
           <div>
             <b-form-select v-model="search" :options="options" size="lg" class="mt-3" ></b-form-select>
         </div>
+           <h1 class="serviceTitle">{{this.search}}</h1>
 <!-- 
     map service lists based on search -->
         <div
@@ -36,6 +37,7 @@
 <script>
 
 import {serverUri} from '../../const';
+import woodImage from '../../assets/abstract-antique-backdrop-background.jpg'
 
 export default {
     
@@ -60,7 +62,8 @@ export default {
         { value: 'Landscaping', text: 'Landscaping' },
          { value: 'Odd Jobs', text: 'Odd Jobs' },
           { value: 'Plumbing', text: 'Plumbing' },
-        ]
+        ],
+        backgroundImage: woodImage
         }
     },
 
@@ -98,11 +101,16 @@ export default {
     return this.services.filter((service) => {
         return service.ServiceType.match(this.search);
     })
+    },
+
+    
+     
+    
     }
 
             
     }
-}
+
 </script>
 
 
@@ -114,13 +122,23 @@ export default {
     border-color: black;
     margin-bottom: 20px;
     border-radius: 15px;
-    background-color: #cc9463 ;
+  
+    /* background-color: #CA9852 ; */
+    background-image: url("../../assets/abstract-antique-backdrop-background.jpg");
+    background-position: bottom;
     color: #2337a7;
   
 }
 
 .serviceTypeList p{
-      font-weight: 500;
+      font-weight: 600;
+}
+
+.serviceTitle{
+    margin-top: -50px;
+    color: #2337a7;
+    background-color: #CA9852;
+    border-radius: 10px;
 }
 
 .catagoryButtons{
@@ -139,6 +157,9 @@ export default {
     font-size: 20px;
     
 }
+
+
+
 .serviceName{
     text-decoration: underline;
 }
@@ -160,6 +181,10 @@ export default {
     padding: 5px 5px 5px 5px;
     background-color: #2d43c0;
     color: white;
+}
+
+.serviceTitle{
+    margin-top: 0%;
 }
 
 }

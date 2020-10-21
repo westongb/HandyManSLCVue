@@ -80,7 +80,7 @@ export default {
 
 .brettSection{
     width: 100%;
-    background-color: #C3AD98;
+    background-color: #CA9852;
     margin-top: -25px;
     padding-top: 50px;
     padding-bottom: 100px;

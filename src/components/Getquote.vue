@@ -173,19 +173,25 @@ h1{
 }
 
 .contact-form{
-
+text-align: left;
+ position: absolute;
+right: 36%;
 }
 
 .quoteform{
+   
     width: 90%;
     height: 700px;
     margin: auto;
-    background-color: #cc9463;
+    background-color: #CA9852;
+    
+    
 }
 
 .formInput{
-    width: 80%;
-    margin: auto;
+    width: 500px;
+    justify-items: left;
+    
 }
 
 .textAreaLabel{
@@ -194,6 +200,7 @@ h1{
 
 .textArea{
     height: 300px;
+    width: 500px;
 }
 
 
@@ -202,10 +209,69 @@ h1{
 }
 
 
+@media screen and (max-width: 1250px) {
+    .contact-form{
+     right: 30%;
+    }
+}
+
+
 @media screen and (max-width: 1050px) {
     .quoteform{
      
     }
+
+     .contact-form{
+     right: 25%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+  .quoteform{
+      width: 60%;
+    }
+
+    .contact-form{
+     position: relative;
+     right: 0%;
+    margin-right: 10%;
+    }
+
+    .formInput{
+    width: 400px;
+    justify-items: left;
+    
+}
+.textArea{
+    height: 300px;
+    width: 400px;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .quoteform{
+      width: 50%;
+    }
+
+    .contact-form{
+     position: relative;
+     right: 0%;
+    margin-right: 10%;
+    }
+
+    .formInput{
+     width: 90%;
+    justify-items: left;
+    
+}
+.textArea{
+    height: 300px;
+    width: 90%;
+}
+
 }
 
 
