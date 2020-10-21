@@ -208,6 +208,17 @@ right: 36%;
     background-color: #3f48cc;
 }
 
+@media screen and (max-width: 1550px) {
+    .contact-form{
+     right: 33%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contact-form{
+     right: 32%;
+    }
+}
 
 @media screen and (max-width: 1250px) {
     .contact-form{
