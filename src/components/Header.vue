@@ -4,7 +4,7 @@
          
             <ul class="headerGroup">
                    <div>
-                <img class="logo" src="@/assets/Handyman logo finished.png"/>
+                <a href="\"><img class="logo" src="@/assets/Handyman logo finished.png"/></a>
             </div>
                 <li >
                     <button  class="headerList"><a href="tel:+1-801-643-6574">
