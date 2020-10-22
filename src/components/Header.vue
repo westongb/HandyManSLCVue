@@ -108,7 +108,7 @@ export default {
     border-width: .002em;
     border: solid  #3f3f3f;
     padding: 2px;
-    background-color: #CA9852;
+   background-color: rgb(202, 152, 82, .7);
     align-items: center;
     justify-self: center;
   

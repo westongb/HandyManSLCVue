@@ -20,9 +20,9 @@ export default {
 
 <style scoped>
 .getQuote{
-    margin-top: 50px;
+    
     padding: 20px;
-    background-color: #CA9852;
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
     padding-bottom: 100px;
 }
 </style>

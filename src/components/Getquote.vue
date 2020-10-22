@@ -176,6 +176,7 @@ h1{
 text-align: left;
  position: absolute;
 right: 36%;
+
 }
 
 .quoteform{
@@ -183,8 +184,7 @@ right: 36%;
     width: 90%;
     height: 700px;
     margin: auto;
-    background-color: #CA9852;
-    
+   
     
 }
 
@@ -192,6 +192,15 @@ right: 36%;
     width: 500px;
     justify-items: left;
     
+}
+
+Label{
+    font-size: 120%;
+    font-weight: 700;
+    background-color: rgb(202, 152, 82, .5);
+    width: 500px;
+    border-radius: 5px;
+    padding-left: 5%;
 }
 
 .textAreaLabel{

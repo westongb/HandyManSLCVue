@@ -116,7 +116,7 @@ export default {
     justify-content: center;
     margin: auto;
    
-    background-color: #CA9852;
+    background-image: url("../assets/abstract-antique-backdrop-background.jpg");
 }
 
 .handyman{

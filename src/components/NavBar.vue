@@ -56,7 +56,7 @@ export default {
 
 .linkText{
   color:#513918;
-  font-weight: bold;
+  font-size: 150%;
 }
 
 
